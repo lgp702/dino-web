@@ -37,6 +37,12 @@ export default new Router({
       // component: resolve => require(['@/views/form03.vue'], resolve)
     },
     {
+      path: '/docUpload',
+      name: 'docUpload',
+      component: () => import('./views/docUpload.vue')
+      // component: resolve => require(['@/views/docUpload.vue'], resolve)
+    },
+    {
       path: '*',
       redirect: '/form01'
     }
